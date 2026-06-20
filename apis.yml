@@ -1,0 +1,121 @@
+aid: carbon-direct
+url: https://raw.githubusercontent.com/api-evangelist/carbon-direct/refs/heads/main/apis.yml
+name: Carbon Direct
+kind: company
+description: Carbon Direct is a science-first carbon management company that pairs an
+  enterprise carbon management platform with a team of 70+ scientists. The platform
+  helps organizations measure emissions, set science-based targets, reduce, and procure
+  high-quality carbon dioxide removal (CDR), with monitoring, reporting, and verification
+  (MRV) capabilities expanded through its 2025 acquisition of Pachama. Carbon Direct
+  is an enterprise SaaS and advisory offering and does not publish a public developer
+  API as of this profile.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Carbon Management
+- Carbon Removal
+- CDR
+- MRV
+- Climate
+- Sustainability
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: carbon-direct:carbon-management-platform
+  name: Carbon Direct Carbon Management Platform
+  tags:
+  - Carbon Management
+  - Emissions Accounting
+  - Platform Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carbon-direct.com/platform
+  properties:
+  - url: https://www.carbon-direct.com/platform
+    type: Documentation
+  description: Enterprise carbon management platform spanning Measure (emissions accounting),
+    Target Setting (SBTi-aligned), Reduce, and Remove. Delivered as enterprise SaaS
+    accessed via the platform.carbondirect.io portal. Product marketing references
+    "AI and API integration" for automated data ingestion, but no public developer
+    API or API reference is documented. Listed here as a platform feature, not a public
+    API.
+- aid: carbon-direct:carbon-portfolio-manager
+  name: Carbon Direct Carbon Portfolio Manager
+  tags:
+  - Carbon Removal
+  - CDR
+  - Procurement
+  - Platform Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carbon-direct.com/platform
+  properties:
+  - url: https://www.carbon-direct.com/platform
+    type: Documentation
+  description: Module for procuring and managing high-quality carbon dioxide removal
+    (CDR) portfolios - pre-vetted credit portfolios, custom curation, contract tracking,
+    supplier management, and delivery monitoring. Surfaced through the platform UI;
+    no public procurement API is documented. Listed as a platform feature, not a public
+    API.
+- aid: carbon-direct:mrv-quality
+  name: Carbon Direct MRV & Quality
+  tags:
+  - MRV
+  - Quality
+  - Monitoring
+  - Platform Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carbon-direct.com/insights/carbon-direct-acquires-pachama
+  properties:
+  - url: https://www.carbon-direct.com/insights/carbon-direct-acquires-pachama
+    type: Documentation
+  description: Digital monitoring, reporting, and verification (MRV) and project diligence
+    capabilities, expanded via the November 2025 acquisition of Pachama's forest carbon
+    MRV technology. Operated as part of Carbon Direct's advisory and platform services;
+    no public MRV API is documented. Listed as a platform feature, not a public API.
+- aid: carbon-direct:reporting-disclosure
+  name: Carbon Direct Reporting & Disclosure
+  tags:
+  - Reporting
+  - Disclosure
+  - Compliance
+  - Platform Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carbon-direct.com/solutions/report
+  properties:
+  - url: https://www.carbon-direct.com/solutions/report
+    type: Documentation
+  description: Auditable emissions reporting and climate disclosure support, including
+    data collection, framework-specific exports (e.g. CDP), and customizable reports.
+    Delivered through the platform and advisory services; no public reporting API or
+    data-export API is documented. Listed as a platform feature, not a public API.
+- aid: carbon-direct:procurement-advisory
+  name: Carbon Direct Procurement & Science Advisory
+  tags:
+  - Advisory
+  - Procurement
+  - Science
+  - Service
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.carbon-direct.com/company
+  properties:
+  - url: https://www.carbon-direct.com/company
+    type: Documentation
+  description: Science advisory and bespoke procurement services delivered by Carbon
+    Direct's team of 70+ scientists, covering carbon strategy, sustainable aviation
+    fuel, climate policy, and project diligence. This is a professional-services offering,
+    not an API. Listed for completeness of the company surface.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/carbon-direct
+- type: Website
+  url: https://www.carbon-direct.com
+- type: Documentation
+  url: https://www.carbon-direct.com/platform
+- type: Plans
+  url: plans/carbon-direct-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/carbon-direct-rate-limits.yml
+- type: FinOps
+  url: finops/carbon-direct-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

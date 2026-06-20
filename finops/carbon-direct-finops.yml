@@ -1,0 +1,88 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Carbon Direct
+providerId: carbon-direct
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Carbon Management
+- Carbon Removal
+- CDR
+- MRV
+- Climate
+- Sustainability
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Carbon Direct spend. Carbon Direct sells enterprise carbon
+  management software, science advisory, and high-quality carbon dioxide
+  removal (CDR) procurement on a negotiated, contact-sales basis. There is no
+  usage-based developer API billing to model; cost is driven by enterprise
+  subscription, advisory engagement scope, and the volume and price of CDR
+  credits procured. No public price points or usage meters are published.
+notes: >-
+  reconciled is false because Carbon Direct publishes no pricing and exposes no
+  public metered API. Meters below are illustrative cost drivers for an
+  enterprise carbon-management engagement, not documented billing units.
+sources:
+- https://www.carbon-direct.com/platform
+- https://www.carbon-direct.com/company
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Carbon Direct
+serviceCategory: Carbon Management and Sustainability
+billingModel:
+  pricingCategory: Enterprise Subscription and Advisory
+  billingFrequency: Negotiated
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+focusColumns:
+  ServiceName: Carbon Direct Platform
+  ServiceCategory: Carbon Management and Sustainability
+  ProviderName: Carbon Direct
+  PublisherName: Carbon Direct
+  InvoiceIssuerName: Carbon Direct
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Enterprise Subscription and Advisory
+meters:
+- name: platform_subscription
+  description: Enterprise carbon management platform subscription, priced per negotiated agreement.
+  unit: contract
+  aggregation: sum
+  dimensions:
+  - account
+- name: advisory_engagement
+  description: Science advisory and procurement services scoped per engagement.
+  unit: engagement
+  aggregation: sum
+  dimensions:
+  - account
+- name: cdr_credits
+  description: High-quality carbon dioxide removal credits procured, priced per tonne CO2 by project type.
+  unit: tonnes_co2
+  aggregation: sum
+  dimensions:
+  - account
+  - project_type
+principles:
+- name: Visibility
+  description: Request itemized statements of platform subscription, advisory scope, and CDR credit volume from Carbon Direct.
+- name: Allocation
+  description: Map platform, advisory, and CDR procurement costs to climate program owners and cost centers.
+- name: Optimization
+  description: Right-size advisory scope and balance CDR portfolio across nature-based, hybrid, and engineered credits to fit budget and quality goals.
+- name: Accountability
+  description: Assign program owners; review CDR procurement and platform spend against the organization's climate budget.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

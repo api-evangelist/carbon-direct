@@ -1,0 +1,69 @@
+aid: carbon-direct
+name: Carbon Direct
+review:
+  question: Does Carbon Direct expose a documented public or partner developer API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No streaming, Server-Sent Events, or WebSocket surface is documented for
+    Carbon Direct, so no AsyncAPI document was created.
+findings:
+  summary: |
+    Carbon Direct does not publish a public or partner developer API, an API
+    reference, developer documentation, SDKs, or a developer portal as of the
+    review date. It is an enterprise carbon management SaaS plus science
+    advisory company. The platform is accessed through an authenticated web
+    portal at platform.carbondirect.io. Product marketing on the platform page
+    references "AI and API integration" for automated data ingestion, but this
+    refers to internal data-connector capability and is not accompanied by any
+    public endpoints, base URL, authentication scheme, or reference. MRV and
+    project-diligence capabilities were expanded via the November 2025
+    acquisition of Pachama's forest carbon MRV technology, but no public MRV
+    API is documented. The apis.yml entries therefore document platform
+    features and services, not public APIs, and the OpenAPI artifact uses an
+    empty paths object to avoid fabrication.
+  disambiguation: |
+    Carbon Direct (carbon-direct.com, science-driven carbon management and CDR
+    procurement) is a distinct company from others already in the catalog with
+    similar names: Carbonmark (carbon credit purchasing/retirement API),
+    CarbonChain (supply-chain emissions), Patch (carbon removal/credits API),
+    and Sylvera (carbon credit ratings). It is also distinct from Carbon Direct
+    Capital, an affiliated investment entity. None of those public APIs should
+    be attributed to Carbon Direct.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API base URL or endpoints are documented.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events streaming is documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented.
+  endpointsConfirmedRest: []
+sources:
+  - url: https://www.carbon-direct.com/platform
+    type: Documentation
+    note: Describes Measure, Target Setting, Remove, and Carbon Portfolio Manager; references "AI and API integration" for data ingestion but provides no API reference or endpoints.
+  - url: https://www.carbon-direct.com/solutions/report
+    type: Documentation
+    note: Reporting and disclosure solution; no API, data-export API, or developer references.
+  - url: https://www.carbon-direct.com/insights/carbon-direct-acquires-pachama
+    type: Documentation
+    note: Pachama acquisition adds digital MRV technology; no public MRV API documented.
+  - url: https://www.carbon-direct.com/company
+    type: Documentation
+    note: Company overview; science advisory and procurement services, not an API.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public API surface exists. apis.yml documents the platform and advisory
+    surfaces as platform features / services (not public APIs), and the
+    OpenAPI artifact uses paths: {} with an accurate description so no
+    endpoints are fabricated.

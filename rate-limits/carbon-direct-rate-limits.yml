@@ -1,0 +1,40 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Carbon Direct
+providerId: carbon-direct
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Carbon Management
+- Carbon Removal
+- CDR
+- MRV
+- Climate
+- Sustainability
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Carbon Direct does not publish a public or partner developer API, so there
+  are no documented API rate limits, quotas, or throttling policies. Access is
+  through an authenticated enterprise web portal (platform.carbondirect.io)
+  rather than a metered programmatic API. Any integration limits would be
+  defined per enterprise agreement and are not publicly documented.
+notes: >-
+  reconciled is false because no public API exists and no rate-limit
+  documentation is published. If Carbon Direct releases a developer API,
+  reconcile this artifact with the documented RPM/quota values at that time.
+sources:
+- https://www.carbon-direct.com/platform
+responseCodes: {}
+limits: []
+policies:
+- name: No Public API
+  description: >-
+    Carbon Direct does not expose a documented public developer API; there are
+    no published programmatic rate limits as of this profile.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

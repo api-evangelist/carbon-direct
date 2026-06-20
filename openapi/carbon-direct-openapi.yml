@@ -1,0 +1,21 @@
+openapi: 3.0.1
+info:
+  title: Carbon Direct API
+  description: >-
+    Carbon Direct is an enterprise carbon management platform and science
+    advisory company. As of this profile (2026-06-20), Carbon Direct does not
+    publish a public or partner developer API, an API reference, or developer
+    documentation. The platform is accessed through the authenticated web
+    portal at platform.carbondirect.io. Product marketing references "AI and
+    API integration" for automated data ingestion, but no externally documented
+    endpoints, base URL, or authentication scheme are available. No endpoints
+    are defined here to avoid fabrication; paths is intentionally empty.
+  contact:
+    name: Carbon Direct
+    url: https://www.carbon-direct.com/company
+  version: '0.0'
+servers:
+  - url: https://platform.carbondirect.io
+    description: >-
+      Authenticated customer web portal (not a documented public API base URL).
+paths: {}

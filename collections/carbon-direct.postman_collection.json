@@ -1,0 +1,11 @@
+{
+  "info": {
+    "name": "Carbon Direct API",
+    "description": {
+      "content": "Carbon Direct does not publish a public or partner developer API as of 2026-06-20. This collection is intentionally empty; it exists as a placeholder in the API Evangelist catalog. Carbon Direct is an enterprise carbon management platform plus science advisory company accessed through the authenticated portal at platform.carbondirect.io.",
+      "type": "text/plain"
+    },
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": []
+}

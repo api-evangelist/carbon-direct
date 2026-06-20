@@ -1,0 +1,60 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Carbon Direct
+providerId: carbon-direct
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Carbon Management
+- Carbon Removal
+- CDR
+- MRV
+- Climate
+- Sustainability
+- Plans
+description: >-
+  Carbon Direct sells enterprise carbon management software and science
+  advisory services on a custom, contact-sales basis. There is no public,
+  self-serve, or usage-based pricing and no public developer API to meter.
+  Engagements combine platform subscriptions with advisory services and
+  high-quality carbon dioxide removal (CDR) procurement, all priced through
+  negotiated enterprise agreements. No published price points are available.
+notes: >-
+  reconciled is false because Carbon Direct does not publish pricing and does
+  not expose a public developer API. Pricing is enterprise / advisory and only
+  available via sales. Update on reconciliation if Carbon Direct publishes
+  rate cards or a self-serve product.
+sources:
+- https://www.carbon-direct.com/platform
+- https://www.carbon-direct.com/company
+plans:
+- id: carbon-direct-enterprise
+  name: Enterprise & Advisory
+  type: enterprise
+  description: >-
+    Custom enterprise platform subscription plus science advisory services and
+    high-quality carbon dioxide removal (CDR) procurement, priced via
+    negotiated agreement. Contact Carbon Direct sales.
+  entries:
+  - label: Enterprise Agreement
+    name: enterprise
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Carbon Management Platform
+  - name: Carbon Portfolio Manager
+  - name: MRV & Quality
+  - name: Reporting & Disclosure
+  - name: Science Advisory
+  - name: CDR Procurement
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
