@@ -104,6 +104,8 @@ apis:
     fuel, climate policy, and project diligence. This is a professional-services offering,
     not an API. Listed for completeness of the company surface.
 common:
+- type: DomainSecurity
+  url: security/carbon-direct-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/carbon-direct
 - type: Website
@@ -116,6 +118,8 @@ common:
   url: rate-limits/carbon-direct-rate-limits.yml
 - type: FinOps
   url: finops/carbon-direct-finops.yml
+- url: https://www.carbon-direct.com/insights
+  type: Blog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
