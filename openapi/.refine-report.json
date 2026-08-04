@@ -1,0 +1,14 @@
+{
+  "provider": "carbon-direct",
+  "sources": [
+    "carbon-direct-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived carbon-direct-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
