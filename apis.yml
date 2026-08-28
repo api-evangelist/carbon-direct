@@ -3,6 +3,17 @@ url: https://raw.githubusercontent.com/api-evangelist/carbon-direct/refs/heads/m
 name: Carbon Direct
 kind: company
 description: Carbon Direct is a science-first carbon management company that pairs an enterprise carbon management platform with a team of 70+ scientists. The platform helps organizations measure emissions, set science-based targets, reduce, and procure high-quality carbon dioxide removal (CDR), with monitoring, reporting, and verification (MRV) capabilities expanded through its 2025 acquisition of Pachama. Carbon Direct is an enterprise SaaS and advisory offering and does not publish a public developer API as of this profile.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: enterprise
   onboarding: unknown
