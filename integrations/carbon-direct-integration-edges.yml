@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/carbon-direct/integrations
+- https://n8n.io/integrations/carbon-direct/
+- https://composio.dev/toolkits/carbon-direct
+- https://monid.ai/tools/carbon-direct
+checked:
+- https://composio.dev/toolkits/carbon-direct
+- https://monid.ai/tools/carbon-direct
+- https://n8n.io/integrations/carbon-direct/
+- https://zapier.com/apps/carbon-direct/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
